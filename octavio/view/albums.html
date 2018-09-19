@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col s12 m3"></div>
+  <div class="col s12 m6 card">
+    <form class="" method="post">
+      <div class="row">
+
+        <div class="input-field col s12 m6 tblack">
+          <input ng-model="albums_name" id="last_name" type="text" class="validate black-text">
+          <label for="last_name" class="black-text">Nombre Albums</label>
+        </div>
+
+        <div class="input-field col s12 m1"></div>
+        <form class="" method="post" ng-submit="uploadFile()">
+          <div class="input-field col s12  m5 tblack card">
+            <br>
+              <img src="../app/public/multimedia/img/album.jpg" alt="" class="responsive-img" ng-show="image.src" ng-src="{{image.src}}"/>
+              <div class="file-field input-field">
+                <div class="btn {{adm.background}} darken-1">
+                  <span><i class="material-icons fixed">add_a_photo</i></span>
+
+                  <input type="file" name="myImage" image-with-preview
+                         ng-model="image"
+                         accept="image/jpeg,image/png"
+                         dimensions="height < 5000 && width < 5000"
+                         size="size < 2097152" uploader-model="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text" ng-model="name">
+                </div>
+              </div>
+                <input type="submit" value="Enviar" class="btn">
+          </div>
+        </form>
+
+        <div class="input-field col s12 m12 tblack">
+          <textarea ng-model="albums_inspiracion" id="textarea1" class="materialize-textarea black-text"></textarea>
+          <label for="textarea1" class="black-text">Inspiracion</label>
+        </div>
+      </div>
+      <button type="button" name="button" class="btn {{adm.background}} darken-1">Guardar</button>
+    </form>
+  </div>
+</div>

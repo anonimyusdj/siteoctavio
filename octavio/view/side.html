@@ -1,0 +1,51 @@
+ <!--ul  class="sidenav sidenav-fixed">
+   <li><div class="user-view">
+     <div class="background">
+       <img src="{{images/office.jpg}}">
+     </div>
+     <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+     <a href="#name"><span class="white-text name">John Doe</span></a>
+     <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+   </div></li>
+   <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+   <li><a href="#!">Second Link</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="subheader">Subheader</a></li>
+   <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+ </ul-->
+
+ <ul id="slide-out" class="collapsible sidenav sidenav-fixed">
+   <li><div class="user-view">
+     <div class="background">
+       <img src="../app/public/multimedia/img/fondoimg.png" width="300px" height="200px">
+     </div>
+     <a href="#"><img class="circle" src="{{adm.perfil}}"></a>
+     <a style="font-size:30px;" href="#"><span class="white-text name">{{adm.autor}}</span></a>
+     <a style="font-size:30px;" href="#"><span class="white-text email">{{adm.correo}}</span></a>
+   </div></li>
+   <li><a style="font-weight:bold;" class="red-text tblack" href="#!"><i class="material-icons red-text">settings_power</i>Salir</a></li>
+   <li><a style="font-weight:bold;" class="blue-text" href="#!"><i class="material-icons {{adm.background}}-text">home</i>Home</a></li>
+   <li><div class="divider"></div></li>
+   <li><a class="subheader">Opciones</a></li>
+
+   <li>
+     <div class="collapsible-header waves-effect tblack"><i class="material-icons {{adm.background}}-text">language</i>Configurar Sitio</div>
+     <div class="collapsible-body"><a></a></div>
+   </li>
+   <li>
+     <div class="collapsible-header waves-effect tblack"><i class="material-icons {{adm.background}}-text">headset</i>Musica</div>
+     <div class="collapsible-body">
+       <ul>
+         <li waves-effect class="tblack"><a href="#!/albums"><i class="material-icons left {{adm.background}}-text">book</i>Albums</a></li>
+       </ul>
+     </div>
+   </li>
+   <li>
+     <div class="collapsible-header waves-effect tblack"><i class="material-icons {{adm.background}}-text">event</i>Evento</div>
+     <div class="collapsible-body">
+       <ul>
+         <li><a>Nuevo Evento</a></li>
+       </ul>
+     </div>
+   </li>
+ </ul>

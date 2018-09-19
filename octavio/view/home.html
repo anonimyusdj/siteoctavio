@@ -1,0 +1,27 @@
+
+<div class="row">
+  <div class="col s12 m3"></div>
+  <div class="col s12 m6 card">
+    <div class="card">
+        <div class="card-content black-text">
+          <span class="card-title">Color de Fondo</span><hr>
+          <div class="input-field col s12 m12">
+              <select ng-model="bg">
+                <option value="" disabled selected>Seleccione un Color</option>
+                <option ng-repeat="b in background" value="{{b}}">{{b}}</option>
+              </select>
+          </div>
+          <div class="row">
+              <div class="col s12 m3 card {{bg}} darken-3 white-text tblack"><br><p>Example Contents</p><br></div>
+              <div class="col s12 m1"></div>
+              <div class="col s12 m3 card"><br><i class="material-icons left {{bg}}-text">check_box</i>Example icons<br><br></div>
+              <div class="col s12 m1"></div>
+              <div class="col s12 m4 card"><br><button type="button" name="button" class="btn {{bg}} darken-1">Example Buttons</button><br><br></div>
+          </div>
+        </div>
+        <div class="card-action">
+          <a href="#" class="tblack btn {{adm.background}} darken-1" ng-click="guardarBG(bg)"><i class="material-icons left">save</i>Guardar</a>
+        </div>
+      </div>
+  </div>
+</div>
