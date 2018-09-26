@@ -32,7 +32,7 @@
             if(isset($_REQUEST['user']) && !empty($_REQUEST['user']) && isset($_REQUEST['pass']) && !empty($_REQUEST['pass'])){
                 $user=$_REQUEST['user'];
                 $pass=$_REQUEST['pass']
-                if($user=="octavio" && $pass=="123"){
+                if($user=="octavio@admin.com" && $pass=="123"){
                     header("location: octavio/index.html");
                 }
             }
