@@ -27,6 +27,11 @@
 </head>
 
 <body>
+    <?php
+        if($_POST){
+            if($_REQUEST['user'])
+        }
+    ?>
     <ng-include src="'app/public/view/menu.html'"></ng-include>
     <div ng-view></div>
     <pie></pie>
