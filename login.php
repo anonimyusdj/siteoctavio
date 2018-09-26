@@ -1,5 +1,4 @@
 <?php
-        if($_POST){
             if(!empty($_REQUEST['user']) && !empty($_REQUEST['pass'])){
                 $user=$_REQUEST['user'];
                 $pass=$_REQUEST['pass']
@@ -11,5 +10,4 @@
             }else{
                 echo "<script> alert('Parametros Vacios')<script>";
             }
-        }
     ?>
