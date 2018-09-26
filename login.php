@@ -1,6 +1,6 @@
 <?php
         if($_POST){
-            if(isset($_REQUEST['user']) && !empty($_REQUEST['user']) && isset($_REQUEST['pass']) && !empty($_REQUEST['pass'])){
+            if(!empty($_REQUEST['user']) && !empty($_REQUEST['pass'])){
                 $user=$_REQUEST['user'];
                 $pass=$_REQUEST['pass']
                 if($user=="octavio@admin.com" && $pass=="123"){
