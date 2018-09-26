@@ -1,15 +1,23 @@
 <div class="row">
-  <div class="col s12 m4">
+    <div class="col s12 m4">
 
-  </div>
+    </div>
     <div class="col s12 m4 card">
-      <div class="form-control">
-        <!-- Dropdown Trigger -->
-          <a class='dropdown-trigger btn' data-target='dropdown1'>Drop Me!</a>
-
-          <!-- Dropdown Structure -->
-
-
-      </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12 m12">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="usuario" type="email" class="validate" ng-mode="user">
+                        <label for="usuario">usuario</label>
+                    </div>
+                    <div class="input-field col s12 m12">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="password" class="validate" ng-model="pass">
+                        <label for="icon_telephone">Contraseña</label>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
