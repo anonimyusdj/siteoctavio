@@ -30,7 +30,7 @@ app.config(function($routeProvider) {
             templateUrl: "app/public/view/login.html",
             controller: "login"
         })
-        //.otherwise({redirectTo: "/" });
+        .otherwise({});
 });
 //////////////////////////////////////////////
 
